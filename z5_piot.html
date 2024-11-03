@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Piotrowski 3K</title>
+<style>
+    .button {
+        display: flex;
+    }
+</style>
+</head>
+<body>
+    <script>
+        function WinOpen_Piotrowski(url, windowName) {
+            window.open(url, windowName, "toolbar=no,directories=no,menubar=no,height=380,width=160,top=400,left=0" + windowName * 200);
+        }
+
+        function closeWindow() {
+            window.close();
+        }
+    </script>
+
+    <p style="color: red; font-size: 27px; font-weight: bold;">
+        Wykonał: Rafał Piotrowski, mój numer w dzienniku to 20, czyli mam układ 4 [(5) mod 4=0]
+    </p>
+
+    <div class="button-container">
+        <input type="button" value="Grafika 1" onclick="WinOpen_Piotrowski('jeden.html', 1)">
+        <input type="button" value="Grafika 2" onclick="WinOpen_Piotrowski('dwa.html', 2)">
+        <input type="button" value="Grafika 3" onclick="WinOpen_Piotrowski('trzy.html', 3)">
+        <input type="button" value="Grafika 4" onclick="WinOpen_Piotrowski('cztery.html', 4)">
+    </div>
+    <br>
+    <input type="button" value="Zamknij" onclick="closeWindow()">
+</body>
+</html>
