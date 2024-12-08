@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1 style="color: black; font-weight: bold; font-size: 30px;">KOD HTML</h1>
+<textarea rows="34" cols="80">
+<!DOCTYPE html>
+   <head>
+   <title>Obliczenia sekund</title>
+   <meta charset="utf-8">
+   </head>
+  <body>
+  <div style="color:green;font-size:44px;">
+   <script language="JavaScript">
+  var d1=prompt("d1=","");
+  var d2=prompt("d2=","");
+  var mnozenie;
+   var a=parseFloat(d1);
+   var b=parseFloat(d2);
+   if(a>b)
+   {
+      mnozenie=(86400*a)-(86400*b);
+      document.write("Różnica sekund miedzy dniami: "+a+" a "+b+", wynosi: "+mnozenie+"<br>");
+   }
+   else
+   {
+      if(a<b)
+      {    
+      mnozenie=(86400*b)-(86400*a);
+      document.write("Różnica sekund miedzy dniami: "+a+" a "+b+", wynosi: "+mnozenie+"<br>");
+      }
+   }
+   
+  </script>
+  </div>
+  </body>
+  </html>
+</textarea>

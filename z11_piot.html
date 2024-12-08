@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ <head>
+ <title>Obliczenia sekund</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:green;font-size:44px;">
+ <script language="JavaScript">
+var d1_pio=prompt("d1=","");
+var d2_pio=prompt("d2=","");
+var mnozenie;
+ var a=parseFloat(d1_pio);
+ var b=parseFloat(d2_pio);
+ if(a>b)
+ {
+    mnozenie=(86400*a)-(86400*b);
+    document.write("Różnica sekund miedzy dniami: "+a+" a "+b+", wynosi: "+mnozenie+"<br>");
+ }
+ else
+ {
+    if(a<b)
+    {    
+    mnozenie=(86400*b)-(86400*a);
+    document.write("Różnica sekund miedzy dniami: "+a+" a "+b+", wynosi: "+mnozenie+"<br>");
+    }
+ }
+ 
+</script>
+</div>
+</body>
+</html>
