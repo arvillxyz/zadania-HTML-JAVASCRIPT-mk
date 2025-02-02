@@ -1,0 +1,45 @@
+<!DOCTYPE html>   
+<head>    
+<title> Użycie funkcji </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:navy;font-size:50px;"> 
+<script language="JavaScript"> 
+var a = parseFloat(prompt("a=","")); 
+var b = parseFloat(prompt("b=","")); 
+
+function suma_pio(a, b) { 
+    return a + b; 
+} 
+
+function odejmowanie_pio(a, b) { 
+    return a - b; 
+} 
+
+function mnozenie_pio(a, b) { 
+    return a * b; 
+} 
+
+function od_kwadratu_pio1(a) { 
+    return a + "^2 = " + (a * a); 
+} 
+
+function od_kwadratu_pio2(b) { 
+    return b + "^2 = " + (b * b); 
+} 
+
+function reszta_z_dzielenia_a_przez_b_pio(a, b) { 
+    return a % b; 
+} 
+
+document.write("suma=" + suma_pio(a, b) + "<br>"); 
+document.write("odejmowanie=" + odejmowanie_pio(a, b) + "<br>"); 
+document.write("mnozenie=" + mnozenie_pio(a, b) + "<br>"); 
+document.write(od_kwadratu_pio1(a) + "<br>"); 
+document.write(od_kwadratu_pio2(b) + "<br>"); 
+document.write("reszta z dzielenia a przez b=" + reszta_z_dzielenia_a_przez_b_pio(a, b) + "<br>"); 
+</script> 
+</div> 
+</body> 
+</html>
