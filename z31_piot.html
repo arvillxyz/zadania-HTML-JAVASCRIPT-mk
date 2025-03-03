@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        function Wazon(_kolor, _cena, _producent) {
+            this.producent = _producent;
+            this.kolor = _kolor;
+            this.cena = _cena;
+            this.Wazon_wyswietl_piotrowski =function() {
+                document.write(`Wazon kosztuje u producenta ${this.producent}zł. Wyprodukowany przez: ${this.kolor}. Kolor wazonu to ${this.cena}`);
+            }
+        }
+
+        let wazon1 = new Wazon("Firma z Wazonami", "bordowy",149.99 );
+        wazon1.Wazon_wyswietl_piotrowski()
+        wazon1.ocena = 4.9;
+wazon1.wazon_pokaz_piotrowski = function() {
+    document.write(`<br>Ten wazon jest oceniany przez nabywców na  ${this.ocena} gwiazdki!`);
+}
+wazon1.wazon_pokaz_piotrowski()
+    </script>
+</body>
+</html>

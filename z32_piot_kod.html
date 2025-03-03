@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1 style="color: black; font-weight: bold; font-size: 30px;">KOD HTML</h1>
+<textarea rows="46" cols="80">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        function Wazon(kolor,  producent, cena, ocena) {
+            this.producent = producent;
+            this.kolor = kolor;
+            this.cena = cena;
+            this.ocena = ocena;
+        }
+        Wazon.prototype.wypisz = function ()
+ {
+ alert(this.producent + ' ' + this.kolor+ ' ' + this.cena+ ' ' + this.ocena);
+ };
+        let wazon1 = new Wazon("bordowy", "Firma z Wazonami", 149.99);
+        let wazon2 = new Wazon("fioletowy", "Wazony z kapelusza", 179.99);
+        let wazon3 = new Wazon("karmazynowy", "Sztos wazony", 349.99);
+        wazon1.ocena =4.9;
+        wazon2.ocena =4.2;
+        wazon3.ocena =5.0;
+
+        wazon1.cena = 149.99;
+        wazon2.cena = 179.99;
+        wazon3.cena = 349.99;
+
+        wazon1.wypisz();
+        wazon2.wypisz();
+        wazon3.wypisz();
+
+        document.write("dostęp do właściwości"+"<br>");
+        document.write("wazon pierwszy"+" "+wazon1.kolor+" "+wazon1.producent+" "+wazon1.cena+"zł "+wazon2.ocena+" gwiazdki"+"<br>");
+        document.write("wazon drugi"+" "+wazon2.kolor+" "+wazon2.producent+" "+wazon2.cena+"zł "+wazon2.ocena+" gwiazdki"+"<br>");
+        document.write("wazon trzeci"+" "+wazon3.kolor+" "+wazon3.producent+" "+wazon3.cena+"zł "+wazon3.ocena+" gwiazdki");
+  </script>
+</body>
+<br>
+ programowanie obiektowe 
+</html>
+</textarea>
+</body>
+</html>
